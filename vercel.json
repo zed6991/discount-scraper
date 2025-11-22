@@ -7,5 +7,8 @@
     "api/scrape.py": {
       "runtime": "python3.9"
     }
-  }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" }
+  ]
 }
